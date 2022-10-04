@@ -33,11 +33,11 @@ namespace WLU_zadanie2
 
             if (bLogged == true & bVerified == true)
             {
-                MessageBox.Show("Gituwa", "Bien");
+                //do form
             }
             else
             {
-                MessageBox.Show("Ah kogut", "No bien");
+                MessageBox.Show("Login, has≥o bπdü tekst weryfikacjyny niepoprawny", "B≥πd logowania");
             }
 
         }
