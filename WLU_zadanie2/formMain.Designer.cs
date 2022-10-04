@@ -30,20 +30,20 @@
         {
             this.tabcSekretariat = new System.Windows.Forms.TabControl();
             this.pgSzukaj = new System.Windows.Forms.TabPage();
+            this.edtOut = new System.Windows.Forms.RichTextBox();
+            this.bttSzukaj = new System.Windows.Forms.Button();
             this.tbLookedfor = new System.Windows.Forms.TextBox();
             this.cmbHow = new System.Windows.Forms.ComboBox();
             this.cmbWhat = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pgDodaj = new System.Windows.Forms.TabPage();
             this.bttDodajUcznia = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbKlasa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNazwisko = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbUser = new System.Windows.Forms.TextBox();
+            this.tbImie = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bttSzukaj = new System.Windows.Forms.Button();
-            this.edtOut = new System.Windows.Forms.RichTextBox();
             this.tabcSekretariat.SuspendLayout();
             this.pgSzukaj.SuspendLayout();
             this.pgDodaj.SuspendLayout();
@@ -74,6 +74,24 @@
             this.pgSzukaj.Size = new System.Drawing.Size(768, 398);
             this.pgSzukaj.TabIndex = 0;
             this.pgSzukaj.Text = "Wyszukaj ucznia/uczniów";
+            // 
+            // edtOut
+            // 
+            this.edtOut.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.edtOut.Location = new System.Drawing.Point(34, 172);
+            this.edtOut.Name = "edtOut";
+            this.edtOut.Size = new System.Drawing.Size(702, 220);
+            this.edtOut.TabIndex = 10;
+            this.edtOut.Text = "";
+            // 
+            // bttSzukaj
+            // 
+            this.bttSzukaj.Location = new System.Drawing.Point(546, 130);
+            this.bttSzukaj.Name = "bttSzukaj";
+            this.bttSzukaj.Size = new System.Drawing.Size(142, 23);
+            this.bttSzukaj.TabIndex = 9;
+            this.bttSzukaj.Text = "Szukaj";
+            this.bttSzukaj.UseVisualStyleBackColor = true;
             // 
             // tbLookedfor
             // 
@@ -119,11 +137,11 @@
             // 
             this.pgDodaj.BackColor = System.Drawing.SystemColors.Control;
             this.pgDodaj.Controls.Add(this.bttDodajUcznia);
-            this.pgDodaj.Controls.Add(this.textBox2);
+            this.pgDodaj.Controls.Add(this.tbKlasa);
             this.pgDodaj.Controls.Add(this.label3);
-            this.pgDodaj.Controls.Add(this.textBox1);
+            this.pgDodaj.Controls.Add(this.tbNazwisko);
             this.pgDodaj.Controls.Add(this.label2);
-            this.pgDodaj.Controls.Add(this.tbUser);
+            this.pgDodaj.Controls.Add(this.tbImie);
             this.pgDodaj.Controls.Add(this.label1);
             this.pgDodaj.Location = new System.Drawing.Point(4, 24);
             this.pgDodaj.Name = "pgDodaj";
@@ -140,13 +158,14 @@
             this.bttDodajUcznia.TabIndex = 9;
             this.bttDodajUcznia.Text = "Dodaj";
             this.bttDodajUcznia.UseVisualStyleBackColor = true;
+            this.bttDodajUcznia.Click += new System.EventHandler(this.bttDodajUcznia_Click);
             // 
-            // textBox2
+            // tbKlasa
             // 
-            this.textBox2.Location = new System.Drawing.Point(288, 164);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(383, 23);
-            this.textBox2.TabIndex = 8;
+            this.tbKlasa.Location = new System.Drawing.Point(288, 164);
+            this.tbKlasa.Name = "tbKlasa";
+            this.tbKlasa.Size = new System.Drawing.Size(383, 23);
+            this.tbKlasa.TabIndex = 8;
             // 
             // label3
             // 
@@ -158,12 +177,12 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "klasa";
             // 
-            // textBox1
+            // tbNazwisko
             // 
-            this.textBox1.Location = new System.Drawing.Point(287, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(383, 23);
-            this.textBox1.TabIndex = 6;
+            this.tbNazwisko.Location = new System.Drawing.Point(287, 103);
+            this.tbNazwisko.Name = "tbNazwisko";
+            this.tbNazwisko.Size = new System.Drawing.Size(383, 23);
+            this.tbNazwisko.TabIndex = 6;
             // 
             // label2
             // 
@@ -175,12 +194,12 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Nazwisko";
             // 
-            // tbUser
+            // tbImie
             // 
-            this.tbUser.Location = new System.Drawing.Point(288, 42);
-            this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(383, 23);
-            this.tbUser.TabIndex = 4;
+            this.tbImie.Location = new System.Drawing.Point(288, 42);
+            this.tbImie.Name = "tbImie";
+            this.tbImie.Size = new System.Drawing.Size(383, 23);
+            this.tbImie.TabIndex = 4;
             // 
             // label1
             // 
@@ -191,24 +210,6 @@
             this.label1.Size = new System.Drawing.Size(70, 34);
             this.label1.TabIndex = 3;
             this.label1.Text = "Imię";
-            // 
-            // bttSzukaj
-            // 
-            this.bttSzukaj.Location = new System.Drawing.Point(546, 130);
-            this.bttSzukaj.Name = "bttSzukaj";
-            this.bttSzukaj.Size = new System.Drawing.Size(142, 23);
-            this.bttSzukaj.TabIndex = 9;
-            this.bttSzukaj.Text = "Szukaj";
-            this.bttSzukaj.UseVisualStyleBackColor = true;
-            // 
-            // edtOut
-            // 
-            this.edtOut.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.edtOut.Location = new System.Drawing.Point(34, 172);
-            this.edtOut.Name = "edtOut";
-            this.edtOut.Size = new System.Drawing.Size(702, 220);
-            this.edtOut.TabIndex = 10;
-            this.edtOut.Text = "";
             // 
             // formMain
             // 
@@ -237,11 +238,11 @@
         private Label label4;
         private TabPage pgDodaj;
         private Button bttDodajUcznia;
-        private TextBox textBox2;
+        private TextBox tbKlasa;
         private Label label3;
-        private TextBox textBox1;
+        private TextBox tbNazwisko;
         private Label label2;
-        private TextBox tbUser;
+        private TextBox tbImie;
         private Label label1;
         private TextBox tbLookedfor;
         private RichTextBox edtOut;
