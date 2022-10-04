@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WLU_zadanie2
 {
@@ -15,6 +16,14 @@ namespace WLU_zadanie2
         public formMain()
         {
             InitializeComponent();
+        }
+
+        private void formMain_Load(object sender, EventArgs e)
+        {
+            cmbHow.SelectedItem = null;
+            cmbHow.SelectedText = "-Wybierz-";
+            cmbWhat.SelectedItem = null;
+            cmbWhat.SelectedText = "-Wybierz-";
         }
     }
 }

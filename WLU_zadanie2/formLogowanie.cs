@@ -34,6 +34,9 @@ namespace WLU_zadanie2
             if (bLogged == true & bVerified == true)
             {
                 //do form
+                Form f2 = new formMain();
+                f2.ShowDialog();
+                this.Close();
             }
             else
             {
