@@ -35,10 +35,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbVeri = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.picVeri = new System.Windows.Forms.PictureBox();
+            this.lblVeri = new System.Windows.Forms.Label();
             this.bttLogin = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVeri)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,24 +103,25 @@
             this.tbVeri.Size = new System.Drawing.Size(244, 23);
             this.tbVeri.TabIndex = 6;
             // 
-            // pictureBox1
+            // picVeri
             // 
-            this.pictureBox1.Image = global::WLU_zadanie2.Properties.Resources._6;
-            this.pictureBox1.Location = new System.Drawing.Point(191, 300);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 31);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.picVeri.Image = global::WLU_zadanie2.Properties.Resources._6;
+            this.picVeri.Location = new System.Drawing.Point(191, 300);
+            this.picVeri.Name = "picVeri";
+            this.picVeri.Size = new System.Drawing.Size(120, 31);
+            this.picVeri.TabIndex = 7;
+            this.picVeri.TabStop = false;
             // 
-            // label5
+            // lblVeri
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(358, 339);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 14);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "losuj nowy";
+            this.lblVeri.AutoSize = true;
+            this.lblVeri.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.lblVeri.Location = new System.Drawing.Point(358, 339);
+            this.lblVeri.Name = "lblVeri";
+            this.lblVeri.Size = new System.Drawing.Size(65, 14);
+            this.lblVeri.TabIndex = 8;
+            this.lblVeri.Text = "losuj nowy";
+            this.lblVeri.Click += new System.EventHandler(this.label5_Click);
             // 
             // bttLogin
             // 
@@ -131,6 +132,7 @@
             this.bttLogin.TabIndex = 9;
             this.bttLogin.Text = "Zaloguj";
             this.bttLogin.UseVisualStyleBackColor = true;
+            this.bttLogin.Click += new System.EventHandler(this.bttLogin_Click);
             // 
             // formLogowanie
             // 
@@ -138,8 +140,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bttLogin);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblVeri);
+            this.Controls.Add(this.picVeri);
             this.Controls.Add(this.tbVeri);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -147,9 +149,10 @@
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "formLogowanie";
             this.Text = "Sekretariat";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVeri)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,8 +167,8 @@
         private Label label3;
         private Label label4;
         private TextBox tbVeri;
-        private PictureBox pictureBox1;
-        private Label label5;
+        private PictureBox picVeri;
+        private Label lblVeri;
         private Button bttLogin;
     }
 }
