@@ -219,7 +219,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabcSekretariat);
             this.Name = "formMain";
-            this.Text = "Form1";
+            this.Text = "Sekretariat";
             this.Load += new System.EventHandler(this.formMain_Load);
             this.tabcSekretariat.ResumeLayout(false);
             this.pgSzukaj.ResumeLayout(false);

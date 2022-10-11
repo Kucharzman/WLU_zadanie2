@@ -48,7 +48,7 @@ namespace WLU_zadanie2
         private void label5_Click(object sender, EventArgs e)
         {
             //string[] sciezki = Directory.GetFiles(@"C:\Users\student\source\repos\WLU_zadanie2\WLU_zadanie2", "*.png");
-            string[] sciezki = Directory.GetFiles(@"C:\Users\student\source\repos\WLU_zadanie2\WLU_zadanie2", "*.png");
+            string[] sciezki = Directory.GetFiles(@"C:\Users\student\source\repos\Kucharzman\WLU_zadanie2\WLU_zadanie2", "*.png");
             List<string> zdjecia = sciezki.ToList();
 
             Random kotlet = new Random();

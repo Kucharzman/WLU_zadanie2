@@ -83,6 +83,7 @@ namespace WLU_zadanie2
             }
             else if (sWartoscJak == "Zawiera")
             {
+                edtOut.Text = "";
                 string sGoryl = tbLookedfor.Text;
                 foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
                 {
@@ -95,6 +96,7 @@ namespace WLU_zadanie2
             }
             else if (sWartoscJak == "Rozpoczyna sie od")
             {
+                edtOut.Text = "";
                 string sGoryl = tbLookedfor.Text;
                 foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
                 {
