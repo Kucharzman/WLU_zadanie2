@@ -92,6 +92,7 @@
             this.bttSzukaj.TabIndex = 9;
             this.bttSzukaj.Text = "Szukaj";
             this.bttSzukaj.UseVisualStyleBackColor = true;
+            this.bttSzukaj.Click += new System.EventHandler(this.bttSzukaj_Click);
             // 
             // tbLookedfor
             // 
