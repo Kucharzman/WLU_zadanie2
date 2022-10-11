@@ -74,16 +74,21 @@ namespace WLU_zadanie2
 
             if (sWartoscJak == "-Wybierz-" || sWartoscJak == "")
             {
-                
+                edtOut.Text = "";
+                foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
+                {
+                    edtOut.Text += line;
+                    edtOut.Text += Environment.NewLine;
+                };
             }
-
-
-            edtOut.Text = "";
-            foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
+            else if (sWartoscJak == "Zawiera")
             {
-                edtOut.Text += line;
-                edtOut.Text += Environment.NewLine;
-            };
+
+            }
+            else if (sWartoscJak == "Rozpoczyna sie od")
+            {
+
+            }
         }
     }
 }

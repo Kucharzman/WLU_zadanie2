@@ -106,7 +106,7 @@
             this.cmbHow.FormattingEnabled = true;
             this.cmbHow.Items.AddRange(new object[] {
             "Zawiera",
-            "Rozpoczyna się od"});
+            "Rozpoczyna sie od"});
             this.cmbHow.Location = new System.Drawing.Point(321, 92);
             this.cmbHow.Name = "cmbHow";
             this.cmbHow.Size = new System.Drawing.Size(142, 23);
