@@ -69,6 +69,15 @@ namespace WLU_zadanie2
 
         private void bttSzukaj_Click(object sender, EventArgs e)
         {
+
+            string sWartoscJak = cmbHow.Text;
+
+            if (sWartoscJak == "-Wybierz-" || sWartoscJak == "")
+            {
+                
+            }
+
+
             edtOut.Text = "";
             foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
             {
