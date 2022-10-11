@@ -83,11 +83,27 @@ namespace WLU_zadanie2
             }
             else if (sWartoscJak == "Zawiera")
             {
-
+                string sGoryl = tbLookedfor.Text;
+                foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
+                {
+                    if (line.Contains(sGoryl))
+                    {
+                        edtOut.Text += line;
+                        edtOut.Text += Environment.NewLine;
+                    }
+                };
             }
             else if (sWartoscJak == "Rozpoczyna sie od")
             {
-
+                string sGoryl = tbLookedfor.Text;
+                foreach (string line in System.IO.File.ReadLines("C:\\Users\\student\\source\\repos\\Kucharzman\\WLU_zadanie2\\WLU_zadanie2\\Uczniowie.txt"))
+                {
+                    if (line.StartsWith(sGoryl))
+                    {
+                        edtOut.Text += line;
+                        edtOut.Text += Environment.NewLine;
+                    }
+                };
             }
         }
     }
